@@ -364,7 +364,7 @@ graph LR
 
 <img src="docs/screenshots/dashboard.png" alt="Dashboard" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
 
-*Interactive dashboard with real-time metrics and AI insights*
+**Interactive dashboard with real-time metrics and AI insights**
 
 ---
 
@@ -372,7 +372,7 @@ graph LR
 
 <img src="docs/screenshots/resume-upload.png" alt="Resume Upload" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
 
-*Drag-and-drop resume upload with instant AI-powered analysis*
+**Drag-and-drop resume upload with instant AI-powered analysis**
 
 ---
 
@@ -380,7 +380,7 @@ graph LR
 
 <img src="docs/screenshots/job-matching.png" alt="Job Matching" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
 
-*Intelligent job matching with detailed compatibility scores*
+**Intelligent job matching with detailed compatibility scores**
 
 ---
 
@@ -388,7 +388,7 @@ graph LR
 
 <img src="docs/screenshots/analytics.png" alt="Analytics" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
 
-*Comprehensive analytics dashboard with actionable insights*
+**Comprehensive analytics dashboard with actionable insights**
 
 </div>
 
@@ -778,6 +778,7 @@ gitgraph:
    - Create your own copy of the project
 
 2. **🌿 Create a Feature Branch**
+
    ```bash
    git checkout -b feature/amazing-feature
    ```
@@ -788,6 +789,7 @@ gitgraph:
    - Update documentation
 
 4. **🧪 Test Everything**
+
    ```bash
    npm run test:all
    npm run lint:all
@@ -887,5 +889,6 @@ Security Standards: SOC 2 Type II
 *Empowering careers, one match at a time* ✨
 
 </div>
+
  
  
