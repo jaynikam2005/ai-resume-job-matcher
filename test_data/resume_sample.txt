@@ -1,0 +1,24 @@
+John Doe
+Email: john.doe@email.com
+Phone: +1 (555) 123-4567
+
+Summary
+Full Stack Developer with 3 years of experience building web applications using React, Node.js, and TypeScript. Strong background in AWS and Docker.
+
+Skills
+- React
+- Node.js
+- TypeScript
+- Python
+- AWS
+- MongoDB
+- Git
+- Docker
+
+Experience
+Software Engineer at Tech Corp (2022 - Present)
+- Built scalable services with Node.js and AWS
+- Led migration to TypeScript and improved developer productivity
+
+Education
+Bachelor of Science in Computer Science, University of Technology

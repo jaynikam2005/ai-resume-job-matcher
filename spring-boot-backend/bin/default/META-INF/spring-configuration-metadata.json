@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "aiservice",
+      "type": "com.airesumemaker.config.AIServiceProperties",
+      "sourceType": "com.airesumemaker.config.AIServiceProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "aiservice.base-url",
+      "type": "java.lang.String",
+      "sourceType": "com.airesumemaker.config.AIServiceProperties"
+    }
+  ],
+  "hints": []
+}

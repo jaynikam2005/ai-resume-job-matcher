@@ -1,0 +1,142 @@
+name: ai-resume-job-matcher
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: ai_resume_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./infrastructure/postgres-init:/docker-entrypoint-initdb.d
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.11.0
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - "ES_JAVA_OPTS=-Xms256m -Xmx512m"
+      - bootstrap.memory_lock=true
+      - cluster.routing.allocation.disk.threshold_enabled=false
+    ports:
+      - "9200:9200"
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data
+    networks:
+      - app-network
+    mem_limit: 1g
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9200/_cluster/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  fastapi-ai-service:
+    build:
+      context: ./fastapi-ai-service
+      dockerfile: Dockerfile
+    ports:
+      - "8001:8001"
+    environment:
+      - PYTHONPATH=/app
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+    volumes:
+      - ./fastapi-ai-service:/app
+    depends_on:
+      - redis
+    networks:
+      - app-network
+
+  spring-boot-backend:
+    build:
+      context: ./spring-boot-backend
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_NAME=ai_resume_db
+      - DB_USERNAME=postgres
+      - DB_PASSWORD=postgres
+      - ELASTICSEARCH_HOST=elasticsearch
+      - ELASTICSEARCH_PORT=9200
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - AI_SERVICE_URL=http://fastapi-ai-service:8001
+      - JWT_SECRET=${JWT_SECRET:-your-secret-key-here}
+      - JAVA_OPTS=-Xms256m -Xmx512m -XX:+UseG1GC -XX:MaxGCPauseMillis=200
+    depends_on:
+      postgres:
+        condition: service_healthy
+      elasticsearch:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      fastapi-ai-service:
+        condition: service_started
+    networks:
+      - app-network
+    mem_limit: 768m
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        # For build time, keep host URLs because Next.js pre-renders with these
+        NEXT_PUBLIC_API_URL: http://localhost:8080/api
+        NEXT_PUBLIC_AI_SERVICE_URL: http://localhost:8001
+    ports:
+      - "3000:3000"
+    environment:
+      # For runtime in browser, use host URLs (these will be injected into the client)
+      - NEXT_PUBLIC_API_URL=http://localhost:8080/api
+      # For server-side calls from frontend to backend within Docker network
+      - INTERNAL_API_URL=http://spring-boot-backend:8080/api
+      - INTERNAL_AI_SERVICE_URL=http://fastapi-ai-service:8001
+      - NODE_ENV=production
+      - NODE_OPTIONS=--max-old-space-size=512
+    depends_on:
+      - spring-boot-backend
+    networks:
+      - app-network
+    mem_limit: 512m
+
+volumes:
+  postgres_data:
+  elasticsearch_data:
+  redis_data:
+
+networks:
+  app-network:
+    driver: bridge

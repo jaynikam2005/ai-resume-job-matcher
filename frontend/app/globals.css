@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Professional and vibrant color palette */
+  --background: 220 30% 98%;
+  --foreground: 220 25% 12%;
+  --card: 220 25% 96%;
+  --card-foreground: 220 20% 15%;
+  --popover: 220 30% 99%;
+  --popover-foreground: 220 25% 12%;
+  --primary: 217 87% 54%;  /* Vibrant blue */
+  --primary-foreground: 0 0% 98%;
+  --secondary: 220 20% 92%;
+  --secondary-foreground: 220 25% 25%;
+  --muted: 220 15% 90%;
+  --muted-foreground: 220 15% 40%;
+  --accent: 142 76% 36%;  /* Fresh green accent */
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 220 20% 85%;
+  --input: 220 20% 88%;
+  --ring: 217 87% 54%;
+  --radius: 0.75rem;
+  --warning: 38 92% 50%;  /* Bright amber */
+  --warning-foreground: 0 0% 98%;
+  --success: 142 76% 36%;  /* Success green */
+  --success-foreground: 0 0% 98%;
+  --info: 199 89% 48%;  /* Info cyan */
+  --info-foreground: 0 0% 98%;
+}
+
+.dark {
+  --background: 220 25% 8%;
+  --foreground: 220 15% 95%;
+  --card: 220 20% 10%;
+  --card-foreground: 220 15% 92%;
+  --popover: 220 25% 9%;
+  --popover-foreground: 220 15% 95%;
+  --primary: 217 87% 64%;  /* Brighter blue for dark mode */
+  --primary-foreground: 220 25% 8%;
+  --secondary: 220 15% 15%;
+  --secondary-foreground: 220 15% 80%;
+  --muted: 220 15% 12%;
+  --muted-foreground: 220 15% 60%;
+  --accent: 142 69% 58%;  /* Lighter green for dark mode */
+  --accent-foreground: 220 25% 8%;
+  --destructive: 0 62% 30%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 220 15% 18%;
+  --input: 220 15% 16%;
+  --ring: 217 87% 64%;
+  --warning: 38 92% 60%;  /* Brighter amber for dark mode */
+  --warning-foreground: 220 25% 8%;
+  --success: 142 69% 58%;
+  --success-foreground: 220 25% 8%;
+  --info: 199 89% 58%;
+  --info-foreground: 220 25% 8%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  /* Enhanced button styles with gradients */
+  .btn-gradient-primary {
+    @apply bg-gradient-to-r from-primary to-blue-600 hover:from-blue-600 hover:to-primary;
+  }
+  
+  .btn-gradient-accent {
+    @apply bg-gradient-to-r from-accent to-green-600 hover:from-green-600 hover:to-accent;
+  }
+  
+  /* Card enhancements */
+  .card-gradient {
+    @apply bg-gradient-to-br from-card to-card/80 border border-border/50 backdrop-blur-sm;
+  }
+  
+  /* Text gradients */
+  .text-gradient-primary {
+    @apply bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent;
+  }
+  
+  .text-gradient-accent {
+    @apply bg-gradient-to-r from-accent to-green-600 bg-clip-text text-transparent;
+  }
+}
