@@ -1,8 +1,6 @@
-<div align="center">
+# 🚀 AI RESUME & JOB MATCHER 🤖
 
-# 🚀 **AI RESUME & JOB MATCHER** 🤖
-
-<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=30&pause=1000&color=00D9FF&center=true&vCenter=true&width=800&lines=AI-Powered+Resume+Intelligence;Next-Gen+Job+Matching+Platform;Powered+by+Google+Gemini+AI;The+Future+of+Recruitment" alt="Typing SVG" />
+![Typing animation](https://readme-typing-svg.herokuapp.com?font=Orbitron&size=30&pause=1000&color=00D9FF&center=true&vCenter=true&width=800&lines=AI-Powered+Resume+Intelligence;Next-Gen+Job+Matching+Platform;Powered+by+Google+Gemini+AI;The+Future+of+Recruitment)
 
 [![Made with Love](https://img.shields.io/badge/Made%20with-💙-blue?style=for-the-badge)](https://github.com/jaynikam2005)
 [![Powered by AI](https://img.shields.io/badge/Powered%20by-🤖%20AI-purple?style=for-the-badge)](https://gemini.google.com)
@@ -15,23 +13,19 @@
 ![GitHub issues](https://img.shields.io/github/issues/jaynikam2005/ai-resume-job-matcher?style=for-the-badge&color=red)
 ![License](https://img.shields.io/github/license/jaynikam2005/ai-resume-job-matcher?style=for-the-badge&color=green)
 
-### 🌟 **REVOLUTIONIZING RECRUITMENT WITH CUTTING-EDGE AI TECHNOLOGY** 🌟
+### 🌟 REVOLUTIONIZING RECRUITMENT WITH CUTTING-EDGE AI TECHNOLOGY 🌟
 
 **[🚀 Live Demo](https://your-demo-link.com) • [📚 Documentation](https://your-docs-link.com) • [🐛 Report Bug](https://github.com/jaynikam2005/ai-resume-job-matcher/issues) • [✨ Request Feature](https://github.com/jaynikam2005/ai-resume-job-matcher/issues)**
 
-</div>
+
 
 ---
 
-## 🎯 **WHAT IS AI RESUME & JOB MATCHER?**
+## 🎯 WHAT IS AI RESUME & JOB MATCHER?
 
-<div align="center">
-  <img src="https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif" width="200" alt="AI Animation">
-</div>
+![AI Animation](https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif)
 
 A cutting-edge AI-powered application that transforms the recruitment process by leveraging **Google's Gemini AI** to intelligently parse resumes and match candidates with job postings. Our platform bridges the gap between job seekers and recruiters with precision matching, skills analysis, and personalized recommendations.
-
-<div align="center">
 
 ```mermaid
 graph TB
@@ -50,21 +44,15 @@ graph TB
     style E fill:#FF9800,stroke:#333,stroke-width:2px
     style F fill:#9C27B0,stroke:#333,stroke-width:2px
     style H fill:#F44336,stroke:#333,stroke-width:2px
-```
-
-</div>
+```text
 
 ## 🌟 **KEY FEATURES & CAPABILITIES**
-
-<div align="center">
 
 | 🤖 **AI-Powered** | 🔍 **Smart Matching** | 📊 **Analytics** | 🔐 **Secure** |
 |:---:|:---:|:---:|:---:|
 | Google Gemini AI integration | Advanced algorithm matching | Real-time insights | JWT authentication |
 | Natural language processing | Skill gap analysis | Performance metrics | Role-based access |
 | Contextual understanding | Preference learning | Trend tracking | Data encryption |
-
-</div>
 
 ### 🚀 **Core Features**
 
@@ -108,8 +96,6 @@ graph TB
 
 ## 🏗️ **SYSTEM ARCHITECTURE**
 
-<div align="center">
-
 ```mermaid
 graph TB
     subgraph "🌐 Frontend Layer"
@@ -148,11 +134,7 @@ graph TB
     style M fill:#336699,stroke:#333,stroke-width:3px
 ```
 
-</div>
-
 ### 🔧 **Technology Stack**
-
-<div align="center">
 
 | **Layer** | **Technology** | **Version** | **Purpose** |
 |:---------:|:-------------:|:-----------:|:------------|
@@ -165,11 +147,7 @@ graph TB
 | 🐳 **Deployment** | Docker | Latest | Containerization |
 | ☁️ **Platform** | Docker Compose | - | Orchestration |
 
-</div>
-
 ## 📊 **PROJECT METRICS & STATISTICS**
-
-<div align="center">
 
 ```mermaid
 pie title Technology Distribution
@@ -191,15 +169,11 @@ pie title Technology Distribution
 | 🔒 **Security** | A+ | Security rating |
 | ♿ **Accessibility** | AA | WCAG compliance |
 
-</div>
-
 ## 🎮 **QUICK START GUIDE**
 
-<div align="center">
-  <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="150" alt="Rocket Launch">
-</div>
+![Rocket Launch](https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif)
 
-### � **Prerequisites**
+### ✅ Prerequisites
 
 Before diving into the future of recruitment, ensure you have these tools:
 
@@ -215,8 +189,7 @@ Before diving into the future of recruitment, ensure you have these tools:
 
 ### ⚡ **Lightning Fast Setup**
 
-<details>
-<summary>🐳 <strong>Option 1: Docker Deployment (Recommended)</strong></summary>
+#### 🐳 Option 1: Docker Deployment (Recommended)
 
 ```bash
 # Clone the future
@@ -241,10 +214,7 @@ docker-compose up -d
 # AI Service: http://localhost:8000
 ```
 
-</details>
-
-<details>
-<summary>🛠️ <strong>Option 2: Development Setup</strong></summary>
+#### 🛠️ Option 2: Development Setup
 
 ```bash
 # 1️⃣ Clone the repository
@@ -308,8 +278,6 @@ SMTP_PASS=your-app-password
 
 ## 🚀 **API ENDPOINTS OVERVIEW**
 
-<div align="center">
-
 ```mermaid
 graph LR
     subgraph "🔐 Authentication"
@@ -340,8 +308,6 @@ graph LR
     end
 ```
 
-</div>
-
 ### 🔗 **Core API Endpoints**
 
 | **Category** | **Endpoint** | **Method** | **Description** |
@@ -358,45 +324,39 @@ graph LR
 
 ## 📱 **APPLICATION SCREENSHOTS**
 
-<div align="center">
-
 ### 🏠 **Dashboard Overview**
 
-<img src="docs/screenshots/dashboard.png" alt="Dashboard" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+![Dashboard](docs/screenshots/dashboard.png)
 
-**Interactive dashboard with real-time metrics and AI insights**
+Interactive dashboard with real-time metrics and AI insights
 
 ---
 
 ### 📄 **Resume Upload & Analysis**
 
-<img src="docs/screenshots/resume-upload.png" alt="Resume Upload" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+![Resume Upload](docs/screenshots/resume-upload.png)
 
-**Drag-and-drop resume upload with instant AI-powered analysis**
+Drag-and-drop resume upload with instant AI-powered analysis
 
 ---
 
 ### 🔍 **Job Matching Results**
 
-<img src="docs/screenshots/job-matching.png" alt="Job Matching" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+![Job Matching](docs/screenshots/job-matching.png)
 
-**Intelligent job matching with detailed compatibility scores**
+Intelligent job matching with detailed compatibility scores
 
 ---
 
 ### 📊 **Analytics & Insights**
 
-<img src="docs/screenshots/analytics.png" alt="Analytics" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+![Analytics](docs/screenshots/analytics.png)
 
-**Comprehensive analytics dashboard with actionable insights**
-
-</div>
+Comprehensive analytics dashboard with actionable insights
 
 ## 🧪 **AI FEATURES & CAPABILITIES**
 
-<div align="center">
-  <img src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" width="200" alt="AI Brain">
-</div>
+![AI Brain](https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif)
 
 ### 🧠 **Advanced AI Processing**
 
@@ -431,8 +391,6 @@ flowchart LR
 
 ### 🚀 **Performance Benchmarks**
 
-<div align="center">
-
 ```mermaid
 gantt
     title AI Processing Performance Timeline
@@ -448,8 +406,6 @@ gantt
     Algorithm Execution :5.5s, 1.5s
     Results Generation  :7s, 0.5s
 ```
-
-</div>
 
 ## 💻 **DEVELOPMENT ECOSYSTEM**
 
@@ -545,8 +501,6 @@ npm run analyze:security # Security vulnerability scan
 
 ## 🔒 **SECURITY & COMPLIANCE**
 
-<div align="center">
-
 ```mermaid
 graph TB
     subgraph "🛡️ Security Layers"
@@ -571,8 +525,6 @@ graph TB
     style G fill:#96CEB4,stroke:#333,stroke-width:2px
 ```
 
-</div>
-
 ### 🛡️ **Security Features**
 
 | **Layer** | **Implementation** | **Standard** |
@@ -587,8 +539,6 @@ graph TB
 ## 📊 **ANALYTICS & INSIGHTS**
 
 ### 📈 **Business Intelligence Dashboard**
-
-<div align="center">
 
 ```mermaid
 pie title User Engagement Distribution
@@ -607,8 +557,6 @@ xychart-beta
     bar [1200, 1800, 2500, 3200, 4100, 5300, 6800, 8100, 9500]
 ```
 
-</div>
-
 ### 🎯 **Key Performance Indicators**
 
 | **Metric** | **Current** | **Target** | **Trend** |
@@ -621,8 +569,6 @@ xychart-beta
 | 🔄 **User Retention (30d)** | 78% | 85% | 📈 +3% |
 
 ## 🚀 **ROADMAP & FUTURE ENHANCEMENTS**
-
-<div align="center">
 
 ```mermaid
 timeline
@@ -649,8 +595,6 @@ timeline
         AI Mentorship      : Personalized career guidance
 ```
 
-</div>
-
 ### 🌟 **Upcoming Features**
 
 | **Feature** | **Status** | **Release** | **Impact** |
@@ -664,8 +608,6 @@ timeline
 
 ## 🏆 **AWARDS & RECOGNITION**
 
-<div align="center">
-
 | 🏅 **Award** | 🏢 **Organization** | 📅 **Year** |
 |:-------------|:-------------------|:------------|
 | 🥇 **Best AI Innovation** | TechCrunch Disrupt | 2024 |
@@ -673,18 +615,13 @@ timeline
 | 🥉 **People's Choice Award** | ProductHunt | 2024 |
 | ⭐ **Top Developer Tool** | GitHub Stars | 2024 |
 
-</div>
+## 🛠️ **TROUBLESHOOTING & SUPPORT**
 
-## �️ **TROUBLESHOOTING & SUPPORT**
-
-<div align="center">
-  <img src="https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif" width="150" alt="Debugging">
-</div>
+![Debugging](https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif)
 
 ### 🚨 **Common Issues & Solutions**
 
-<details>
-<summary>🔧 <strong>Docker Issues</strong></summary>
+#### 🔧 Docker Issues
 
 ```bash
 # Port already in use
@@ -701,10 +638,7 @@ docker system prune -a
 # Increase Docker memory to 8GB+
 ```
 
-</details>
-
-<details>
-<summary>🤖 <strong>AI Service Issues</strong></summary>
+#### 🤖 AI Service Issues
 
 ```bash
 # Gemini API quota exceeded
@@ -720,10 +654,7 @@ GEMINI_TIMEOUT = 60  # seconds
 # Ensure your project has Gemini API enabled
 ```
 
-</details>
-
-<details>
-<summary>⚡ <strong>Performance Issues</strong></summary>
+#### ⚡ Performance Issues
 
 ```bash
 # Slow API responses
@@ -737,8 +668,6 @@ GEMINI_TIMEOUT = 60  # seconds
 # Use lazy loading for components
 ```
 
-</details>
-
 ### 📞 **Getting Help**
 
 | **Channel** | **Response Time** | **Purpose** |
@@ -750,9 +679,7 @@ GEMINI_TIMEOUT = 60  # seconds
 
 ## 🤝 **CONTRIBUTING TO THE FUTURE**
 
-<div align="center">
-  <img src="https://media.giphy.com/media/LaVp0AyqR5bGsC5Cbm/giphy.gif" width="200" alt="Collaboration">
-</div>
+![Collaboration](https://media.giphy.com/media/LaVp0AyqR5bGsC5Cbm/giphy.gif)
 
 ### 🌟 **How to Contribute**
 
@@ -779,9 +706,9 @@ gitgraph:
 
 2. **🌿 Create a Feature Branch**
 
-   ```bash
-   git checkout -b feature/amazing-feature
-   ```
+    ```bash
+    git checkout -b feature/amazing-feature
+    ```
 
 3. **✨ Make Your Changes**
    - Follow our coding standards
@@ -790,21 +717,22 @@ gitgraph:
 
 4. **🧪 Test Everything**
 
-   ```bash
-   npm run test:all
-   npm run lint:all
-   ```
+    ```bash
+    npm run test:all
+    npm run lint:all
+    ```
 
 5. **📝 Commit with Style**
-   ```bash
-   git commit -m "✨ Add amazing feature that does X
+
+    ```bash
+    git commit -m "✨ Add amazing feature that does X
    
-   - Implement feature X with Y technology
-   - Add comprehensive test coverage
-   - Update documentation and examples
+    - Implement feature X with Y technology
+    - Add comprehensive test coverage
+    - Update documentation and examples
    
-   Fixes #123"
-   ```
+    Fixes #123"
+    ```
 
 6. **🚀 Create Pull Request**
    - Provide detailed description
@@ -813,8 +741,6 @@ gitgraph:
 
 ### 🏆 **Contributor Recognition**
 
-<div align="center">
-
 | 👑 **Top Contributors** | 🎯 **Contributions** | 🌟 **Impact** |
 |:----------------------|:-------------------|:--------------|
 | [@jaynikam2005](https://github.com/jaynikam2005) | 🏗️ Core Architecture | 🔥 Founder |
@@ -822,17 +748,12 @@ gitgraph:
 | [@contributor2](https://github.com) | 🤖 AI Integration | ⭐ High |
 | [@contributor3](https://github.com) | 🔒 Security Features | ⭐ Medium |
 
-</div>
-
 ## 📄 **LICENSE & LEGAL**
-
-<div align="center">
 
 [![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 [![GDPR Compliant](https://img.shields.io/badge/GDPR-Compliant-green.svg?style=for-the-badge)](https://gdpr.eu/)
 [![SOC 2](https://img.shields.io/badge/SOC%202-Compliant-blue.svg?style=for-the-badge)](https://www.aicpa.org/interestareas/frc/assuranceadvisoryservices/sorhome.html)
 
-</div>
 
 ### ⚖️ **Legal Information**
 
@@ -846,8 +767,6 @@ Security Standards: SOC 2 Type II
 ```
 
 ## 🌟 **ACKNOWLEDGEMENTS & CREDITS**
-
-<div align="center">
 
 ### 🙏 **Special Thanks To**
 
@@ -863,17 +782,13 @@ Security Standards: SOC 2 Type II
 | ⚡ **Caching** | [Redis](https://redis.io) | In-memory data structure store |
 | 🐳 **Containerization** | [Docker](https://docker.com) | Application containerization |
 
-</div>
-
 ---
 
-<div align="center">
+## 🚀 READY TO TRANSFORM RECRUITMENT?
 
-## � **READY TO TRANSFORM RECRUITMENT?**
+![Call to Action](https://readme-typing-svg.herokuapp.com?font=Orbitron&size=25&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Join+the+AI+Revolution;Build+the+Future+of+Work;Match+Dreams+with+Opportunities)
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=25&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Join+the+AI+Revolution;Build+the+Future+of+Work;Match+Dreams+with+Opportunities" alt="Call to Action" />
-
-**[🌟 Star this Repository](https://github.com/jaynikam2005/ai-resume-job-matcher) • [🍴 Fork & Contribute](https://github.com/jaynikam2005/ai-resume-job-matcher/fork) • [🚀 Deploy Your Own](https://github.com/jaynikam2005/ai-resume-job-matcher#quick-start-guide)**
+[🌟 Star this Repository](https://github.com/jaynikam2005/ai-resume-job-matcher) • [🍴 Fork & Contribute](https://github.com/jaynikam2005/ai-resume-job-matcher/fork) • [🚀 Deploy Your Own](https://github.com/jaynikam2005/ai-resume-job-matcher#quick-start-guide)
 
 ### 💫 **Connect With Us**
 
@@ -884,11 +799,6 @@ Security Standards: SOC 2 Type II
 
 ---
 
-<img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="60"> **Made with 💙 by Jay Nikam** <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="60">
+![Made with Love](https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif)
 
-*Empowering careers, one match at a time* ✨
-
-</div>
-
- 
- 
+Empowering careers, one match at a time ✨
