@@ -17,8 +17,6 @@
 
 **[🚀 Live Demo](https://your-demo-link.com) • [📚 Documentation](https://your-docs-link.com) • [🐛 Report Bug](https://github.com/jaynikam2005/ai-resume-job-matcher/issues) • [✨ Request Feature](https://github.com/jaynikam2005/ai-resume-job-matcher/issues)**
 
-
-
 ---
 
 ## 🎯 WHAT IS AI RESUME & JOB MATCHER?
@@ -44,7 +42,7 @@ graph TB
     style E fill:#FF9800,stroke:#333,stroke-width:2px
     style F fill:#9C27B0,stroke:#333,stroke-width:2px
     style H fill:#F44336,stroke:#333,stroke-width:2px
-```text
+```
 
 ## 🌟 **KEY FEATURES & CAPABILITIES**
 
@@ -246,8 +244,6 @@ npm run dev
 # 🎉 Open http://localhost:3000 to experience the future!
 ```
 
-</details>
-
 ### 🎯 **Environment Configuration**
 
 Create a `.env` file in the root directory:
@@ -434,7 +430,7 @@ npm run analyze:security # Security vulnerability scan
 
 ### 🏗️ **Project Structure Deep Dive**
 
-```
+```text
 🏢 ai-resume-job-matcher/
 ├── 🎨 frontend/                    # Next.js Frontend
 │   ├── 📱 app/                     # App Router pages
@@ -704,25 +700,25 @@ gitgraph:
 1. **🍴 Fork the Repository**
    - Create your own copy of the project
 
-2. **🌿 Create a Feature Branch**
+1. **🌿 Create a Feature Branch**
 
     ```bash
     git checkout -b feature/amazing-feature
     ```
 
-3. **✨ Make Your Changes**
+1. **✨ Make Your Changes**
    - Follow our coding standards
    - Add comprehensive tests
    - Update documentation
 
-4. **🧪 Test Everything**
+1. **🧪 Test Everything**
 
     ```bash
     npm run test:all
     npm run lint:all
     ```
 
-5. **📝 Commit with Style**
+1. **📝 Commit with Style**
 
     ```bash
     git commit -m "✨ Add amazing feature that does X
@@ -734,7 +730,7 @@ gitgraph:
     Fixes #123"
     ```
 
-6. **🚀 Create Pull Request**
+1. **🚀 Create Pull Request**
    - Provide detailed description
    - Include screenshots/demos
    - Reference related issues
