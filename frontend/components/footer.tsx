@@ -56,7 +56,7 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="font-semibold">Company</h3>
             <div className="space-y-2 text-sm">
-              <Link href="/about" className="block text-muted-foreground hover:text-primary transition-colors">
+              {/*<Link href="/about" className="block text-muted-foreground hover:text-primary transition-colors">
                 About Us
               </Link>
               <Link href="/privacy" className="block text-muted-foreground hover:text-primary transition-colors">
@@ -64,7 +64,7 @@ export function Footer() {
               </Link>
               <Link href="/contact" className="block text-muted-foreground hover:text-primary transition-colors">
                 Contact
-              </Link>
+              </Link>*/}
             </div>
           </div>
         </div>
