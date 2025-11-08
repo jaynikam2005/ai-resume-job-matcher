@@ -58,10 +58,12 @@ graph TB
 
 ### 🎥 See It In Action
 
-| Job Seeker Flow | Recruiter Dashboard | AI Matching |
-|:---------------:|:-------------------:|:-----------:|
-| ![Resume Upload](https://via.placeholder.com/250x150/4CAF50/FFFFFF?text=Upload+Resume) | ![Dashboard](https://via.placeholder.com/250x150/2196F3/FFFFFF?text=Manage+Jobs) | ![AI Match](https://via.placeholder.com/250x150/FF9800/FFFFFF?text=AI+Matching) |
-| Upload & Analyze | Post & Track | Smart Recommendations |
+
+| Resume Upload<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0277ea16-572f-4744-b1ce-fddcc9eae6d0" />
+ | Login Page<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2ae5b1bf-af03-46aa-84b5-754d7474dc24" />
+ | Job Postings<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/461610fe-5b86-41d8-9781-46ec8747023f" />
+ 
+
 
 </div>
 
