@@ -16,7 +16,14 @@ class CorsConfig {
     @Bean
     fun corsConfigurationSource(): CorsConfigurationSource {
         val configuration = CorsConfiguration()
-        configuration.allowedOrigins = listOf(frontendUrl, "https://ai-resume-job-matcher.vercel.app/", "https://*.vercel.app")
+        
+        // Allow your specific Vercel URL and all Vercel preview deployments
+        configuration.allowedOriginPatterns = listOf(
+            frontendUrl,
+            "https://*.vercel.app",
+            "https://ai-resume-job-matcher-*.vercel.app"
+        )
+        
         configuration.allowedMethods = listOf("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH")
         configuration.allowedHeaders = listOf("*")
         configuration.allowCredentials = true
