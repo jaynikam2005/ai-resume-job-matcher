@@ -1,7 +1,10 @@
-# Ignore node_modules
 node_modules
+.next
 .git
+.gitignore
+*.log
+.env
+.env.*
 README.md
-.env*
-.dockerignore
-Dockerfile
+.vercel
+.DS_Store

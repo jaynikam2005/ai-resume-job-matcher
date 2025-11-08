@@ -1,0 +1,10 @@
+.gradle
+build
+bin
+.git
+.gitignore
+*.log
+node_modules
+README.md
+.env
+.env.*
