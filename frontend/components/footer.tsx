@@ -70,9 +70,10 @@ export function Footer() {
         </div>
 
         <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
-          <p>&copy; 2024 AI JobMatch. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} AI JobMatch. All rights reserved.</p>
         </div>
       </div>
     </footer>
   )
 }
+
