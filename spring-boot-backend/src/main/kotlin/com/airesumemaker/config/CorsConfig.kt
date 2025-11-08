@@ -10,22 +10,24 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource
 @Configuration
 class CorsConfig {
 
-    @Value("\${frontend.url:ai-resume-job-matcher-ex1l3skbw-jaynikam2005-3879s-projects.vercel.app}")
+    @Value("\${frontend.url:http://localhost:3000}")
     private lateinit var frontendUrl: String
 
     @Bean
     fun corsConfigurationSource(): CorsConfigurationSource {
         val configuration = CorsConfiguration()
         
-        // Allow your specific Vercel URL and all Vercel preview deployments
+        // Allow all Vercel deployments and localhost
         configuration.allowedOriginPatterns = listOf(
-            frontendUrl,
             "https://*.vercel.app",
-            "http://ai-resume-job-matcher-ex1l3skbw-jaynikam2005-3879s-projects.vercel.app/"
+            "https://ai-resume-job-matcher-*.vercel.app",
+            "http://localhost:*",
+            "http://localhost:3000"
         )
         
         configuration.allowedMethods = listOf("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH")
         configuration.allowedHeaders = listOf("*")
+        configuration.exposedHeaders = listOf("Authorization", "Content-Type")
         configuration.allowCredentials = true
         configuration.maxAge = 3600L
 
