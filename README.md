@@ -9,792 +9,286 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-Latest-teal?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com)
 
 ![GitHub stars](https://img.shields.io/github/stars/jaynikam2005/ai-resume-job-matcher?style=for-the-badge&color=yellow)
-![GitHub forks](https://img.shields.io/github/forks/jaynikam2005/ai-resume-job-matcher?style=for-the-badge&color=orange)
-![GitHub issues](https://img.shields.io/github/issues/jaynikam2005/ai-resume-job-matcher?style=for-the-badge&color=red)
 ![License](https://img.shields.io/github/license/jaynikam2005/ai-resume-job-matcher?style=for-the-badge&color=green)
 
-### 🌟 REVOLUTIONIZING RECRUITMENT WITH CUTTING-EDGE AI TECHNOLOGY 🌟
-
-**[🚀 Live Demo](https://your-demo-link.com) • [📚 Documentation](https://your-docs-link.com) • [🐛 Report Bug](https://github.com/jaynikam2005/ai-resume-job-matcher/issues) • [✨ Request Feature](https://github.com/jaynikam2005/ai-resume-job-matcher/issues)**
+**[🚀 Live Demo](https://your-demo-link.com) • [📚 Documentation](https://your-docs-link.com) • [🐛 Issues](https://github.com/jaynikam2005/ai-resume-job-matcher/issues)**
 
 ---
 
-## 🎯 WHAT IS AI RESUME & JOB MATCHER?
+## 🎯 OVERVIEW
 
-![AI Animation](https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif)
-
-A cutting-edge AI-powered application that transforms the recruitment process by leveraging **Google's Gemini AI** to intelligently parse resumes and match candidates with job postings. Our platform bridges the gap between job seekers and recruiters with precision matching, skills analysis, and personalized recommendations.
+AI-powered recruitment platform leveraging **Google Gemini AI** for intelligent resume parsing and candidate-job matching. Connects job seekers with recruiters using advanced matching algorithms and real-time analytics.
 
 ```mermaid
 graph TB
-    subgraph "🎯 User Journey"
-        A[👤 Job Seeker] --> B[📄 Upload Resume]
-        C[🏢 Recruiter] --> D[📝 Post Job]
-        B --> E[🤖 AI Analysis]
-        D --> E
-        E --> F[💡 Smart Matching]
-        F --> G[📊 Results Dashboard]
-        G --> H[🚀 Apply/Hire]
-    end
-    
-    style A fill:#4CAF50,stroke:#333,stroke-width:2px
-    style C fill:#2196F3,stroke:#333,stroke-width:2px
-    style E fill:#FF9800,stroke:#333,stroke-width:2px
-    style F fill:#9C27B0,stroke:#333,stroke-width:2px
-    style H fill:#F44336,stroke:#333,stroke-width:2px
+    A["👤 Job Seeker"] -->|Upload Resume| B["🤖 AI Analysis"]
+    C["🏢 Recruiter"] -->|Post Job| B
+    B -->|Smart Match| D["📊 Dashboard"]
+    D -->|Connect| E["✅ Success"]
 ```
 
-## 🌟 **KEY FEATURES & CAPABILITIES**
+---
 
-| 🤖 **AI-Powered** | 🔍 **Smart Matching** | 📊 **Analytics** | 🔐 **Secure** |
+## ✨ KEY FEATURES
+
+| 🤖 AI-Powered | 🔍 Smart Matching | 📊 Analytics | 🛡️ Secure |
 |:---:|:---:|:---:|:---:|
-| Google Gemini AI integration | Advanced algorithm matching | Real-time insights | JWT authentication |
-| Natural language processing | Skill gap analysis | Performance metrics | Role-based access |
-| Contextual understanding | Preference learning | Trend tracking | Data encryption |
+| Gemini AI parsing | 87% accuracy | Real-time dashboards | JWT auth |
+| PDF/DOCX/TXT support | Multi-dimensional algorithm | Performance metrics | RBAC |
+| Contextual extraction | Weighted scoring | Trend tracking | AES-256 encryption |
 
-### 🚀 **Core Features**
+---
 
-```yaml
-🤖 AI-Powered Resume Parsing:
-  - Extract skills, experience, and qualifications using Google Gemini AI
-  - Support for PDF, DOCX, TXT formats
-  - Contextual skill recognition
-  - Experience level assessment
-
-🔍 Intelligent Job Matching:
-  - Multi-dimensional matching algorithms
-  - Weighted scoring system
-  - Skills compatibility analysis
-  - Cultural fit assessment
-
-📊 Interactive Dashboards:
-  - Real-time analytics and insights
-  - Visual match representations
-  - Progress tracking
-  - Performance metrics
-
-🛡️ Role-Based Access Control:
-  - Separate workflows for job seekers and recruiters
-  - Granular permissions
-  - Secure data handling
-  - Privacy controls
-
-📱 Responsive Design:
-  - Mobile-first approach
-  - Cross-platform compatibility
-  - Progressive Web App features
-  - Offline capabilities
-
-🌐 Real-time Updates:
-  - WebSocket integration
-  - Instant notifications
-  - Live match updates
-  - Push notifications
-```
-
-## 🏗️ **SYSTEM ARCHITECTURE**
+## 🏗️ ARCHITECTURE
 
 ```mermaid
 graph TB
-    subgraph "🌐 Frontend Layer"
-        A[Next.js 15.5.2] --> B[React Components]
-        B --> C[Tailwind CSS]
-        C --> D[TypeScript]
+    subgraph Frontend["🌐 Frontend"]
+        A["Next.js 15.5.2"]
+    end
+    subgraph Backend["🔧 Backend"]
+        B["Spring Boot 3.3.4"]
+    end
+    subgraph AI["🤖 AI Service"]
+        C["FastAPI + Gemini"]
+    end
+    subgraph Data["💾 Data"]
+        D["PostgreSQL"]
+        E["Redis"]
+        F["Elasticsearch"]
     end
     
-    subgraph "🔗 API Gateway"
-        E[Spring Boot 3.3.4] --> F[REST APIs]
-        F --> G[JWT Security]
-        G --> H[Request Routing]
-    end
-    
-    subgraph "🤖 AI Services"
-        I[FastAPI Service] --> J[Google Gemini AI]
-        J --> K[Document Processing]
-        K --> L[Text Analysis]
-    end
-    
-    subgraph "💾 Data Layer"
-        M[PostgreSQL] --> N[User Data]
-        O[Elasticsearch] --> P[Search Index]
-        Q[Redis] --> R[Cache Layer]
-    end
-    
-    A --> E
-    E --> I
-    E --> M
-    E --> O
-    E --> Q
-    
-    style A fill:#00D9FF,stroke:#333,stroke-width:3px
-    style E fill:#00FF00,stroke:#333,stroke-width:3px
-    style I fill:#FF6B35,stroke:#333,stroke-width:3px
-    style M fill:#336699,stroke:#333,stroke-width:3px
+    A --> B
+    B --> C
+    B --> D
+    B --> E
+    B --> F
 ```
 
-### 🔧 **Technology Stack**
+### Technology Stack
 
-| **Layer** | **Technology** | **Version** | **Purpose** |
-|:---------:|:-------------:|:-----------:|:------------|
-| 🎨 **Frontend** | Next.js | 15.5.2 | Server-side rendering, React framework |
-| 🔧 **Backend** | Spring Boot | 3.3.4 | RESTful API, Business logic |
-| 🤖 **AI Service** | FastAPI | Latest | AI integration, Document processing |
-| 🗄️ **Database** | PostgreSQL | 15+ | Primary data storage |
-| 🔍 **Search** | Elasticsearch | 8.x | Full-text search, Indexing |
-| ⚡ **Cache** | Redis | 7.x | Session management, Caching |
-| 🐳 **Deployment** | Docker | Latest | Containerization |
-| ☁️ **Platform** | Docker Compose | - | Orchestration |
+| Layer | Technology | Version | Purpose |
+|-------|-----------|---------|---------|
+| Frontend | Next.js | 15.5.2 | React SSR framework |
+| Backend | Spring Boot | 3.3.4 | REST API & business logic |
+| AI | FastAPI | Latest | Document processing |
+| Database | PostgreSQL | 15+ | Primary storage |
+| Search | Elasticsearch | 8.x | Full-text indexing |
+| Cache | Redis | 7.x | Session & performance |
 
-## 📊 **PROJECT METRICS & STATISTICS**
+---
 
-```mermaid
-pie title Technology Distribution
-    "Frontend (Next.js)" : 35
-    "Backend (Spring Boot)" : 30
-    "AI Service (FastAPI)" : 20
-    "Infrastructure" : 10
-    "Documentation" : 5
-```
+## ⚡ QUICK START
 
-### 📈 **Performance Metrics**
-
-| Metric | Value | Description |
-|:------:|:-----:|:------------|
-| 🚀 **Load Time** | < 2s | Initial page load |
-| ⚡ **API Response** | < 500ms | Average response time |
-| 🧠 **AI Processing** | < 5s | Resume analysis time |
-| 📱 **Mobile Score** | 95/100 | Lighthouse mobile score |
-| 🔒 **Security** | A+ | Security rating |
-| ♿ **Accessibility** | AA | WCAG compliance |
-
-## 🎮 **QUICK START GUIDE**
-
-![Rocket Launch](https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif)
-
-### ✅ Prerequisites
-
-Before diving into the future of recruitment, ensure you have these tools:
+### Prerequisites
 
 ```bash
-# Required Software Stack
-✅ Node.js 20.x or later
-✅ Java 21 or later  
-✅ Python 3.11+
-✅ Docker & Docker Compose
-✅ PostgreSQL 15+
-✅ Git
+✅ Node.js 20+  •  Java 21+  •  Python 3.11+  •  Docker  •  Git
 ```
 
-### ⚡ **Lightning Fast Setup**
-
-#### 🐳 Option 1: Docker Deployment (Recommended)
+### Docker Setup (Recommended)
 
 ```bash
-# Clone the future
 git clone https://github.com/jaynikam2005/ai-resume-job-matcher.git
 cd ai-resume-job-matcher
 
-# Copy environment template
 cp .env.example .env
+# Edit .env with GEMINI_API_KEY, DATABASE_URL, JWT_SECRET
 
-# Configure your environment variables
-# Edit .env file with your settings:
-# - GEMINI_API_KEY=your_google_gemini_api_key
-# - DATABASE_URL=postgresql://user:password@localhost:5432/resume_matcher
-# - JWT_SECRET=your_jwt_secret_key
-
-# Launch the entire stack with one command
 docker-compose up -d
-
-# Wait for magic to happen... ✨
-# Frontend: http://localhost:3000
-# Backend API: http://localhost:8080
-# AI Service: http://localhost:8000
 ```
 
-#### 🛠️ Option 2: Development Setup
+**Services Ready:**
+
+- Frontend: `http://localhost:3000`
+- Backend: `http://localhost:8080`
+- AI Service: `http://localhost:8000`
+
+### Local Development
 
 ```bash
-# 1️⃣ Clone the repository
-git clone https://github.com/jaynikam2005/ai-resume-job-matcher.git
-cd ai-resume-job-matcher
-
-# 2️⃣ Setup Database
-docker run --name postgres-resume-matcher \
-  -e POSTGRES_DB=resume_matcher \
-  -e POSTGRES_USER=admin \
-  -e POSTGRES_PASSWORD=admin123 \
-  -p 5432:5432 -d postgres:15
-
-# 3️⃣ Backend Setup (Spring Boot)
+# Backend
 cd spring-boot-backend
-./gradlew clean build
 ./gradlew bootRun
 
-# 4️⃣ AI Service Setup (FastAPI)
-cd ../fastapi-ai-service
+# AI Service
+cd fastapi-ai-service
 pip install -r requirements.txt
 uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 
-# 5️⃣ Frontend Setup (Next.js)
-cd ../frontend
-npm install
-npm run dev
-
-# 🎉 Open http://localhost:3000 to experience the future!
+# Frontend
+cd frontend
+npm install && npm run dev
 ```
 
-### 🎯 **Environment Configuration**
-
-Create a `.env` file in the root directory:
+### Environment Variables
 
 ```env
-# 🤖 AI Configuration
-GEMINI_API_KEY=your_google_gemini_api_key_here
-AI_SERVICE_URL=http://localhost:8000
-
-# 🗄️ Database Configuration
+GEMINI_API_KEY=your_key
 DATABASE_URL=postgresql://admin:admin123@localhost:5432/resume_matcher
 REDIS_URL=redis://localhost:6379
-
-# 🔐 Security Configuration
-JWT_SECRET=your-super-secret-jwt-key-here
-JWT_EXPIRATION=86400
-
-# 🌐 Service URLs
+JWT_SECRET=your-secret-key
 BACKEND_URL=http://localhost:8080
 FRONTEND_URL=http://localhost:3000
-
-# 📧 Email Configuration (Optional)
-SMTP_HOST=smtp.gmail.com
-SMTP_PORT=587
-SMTP_USER=your-email@gmail.com
-SMTP_PASS=your-app-password
 ```
-
-## 🚀 **API ENDPOINTS OVERVIEW**
-
-```mermaid
-graph LR
-    subgraph "🔐 Authentication"
-        A1[POST /auth/login] --> A2[POST /auth/register]
-        A2 --> A3[POST /auth/refresh]
-    end
-    
-    subgraph "👤 User Management"
-        B1[GET /users/profile] --> B2[PUT /users/profile]
-        B2 --> B3[DELETE /users/account]
-    end
-    
-    subgraph "📄 Resume Operations"
-        C1[POST /resumes/upload] --> C2[GET /resumes/:id]
-        C2 --> C3[PUT /resumes/:id]
-        C3 --> C4[DELETE /resumes/:id]
-    end
-    
-    subgraph "💼 Job Management"
-        D1[POST /jobs/create] --> D2[GET /jobs/search]
-        D2 --> D3[GET /jobs/:id]
-        D3 --> D4[PUT /jobs/:id]
-    end
-    
-    subgraph "🔍 Matching Engine"
-        E1[POST /matching/analyze] --> E2[GET /matching/results]
-        E2 --> E3[POST /matching/feedback]
-    end
-```
-
-### 🔗 **Core API Endpoints**
-
-| **Category** | **Endpoint** | **Method** | **Description** |
-|:-------------|:-------------|:-----------|:----------------|
-| 🔐 **Auth** | `/auth/login` | POST | User authentication |
-| 🔐 **Auth** | `/auth/register` | POST | User registration |
-| 📄 **Resume** | `/resumes/upload` | POST | Upload and parse resume |
-| 📄 **Resume** | `/resumes/analyze` | POST | AI-powered analysis |
-| 💼 **Jobs** | `/jobs/search` | GET | Search job postings |
-| 💼 **Jobs** | `/jobs/create` | POST | Create new job posting |
-| 🔍 **Match** | `/matching/candidates` | POST | Find matching candidates |
-| 🔍 **Match** | `/matching/jobs` | POST | Find matching jobs |
-| 📊 **Analytics** | `/analytics/dashboard` | GET | Dashboard data |
-
-## 📱 **APPLICATION SCREENSHOTS**
-
-### 🏠 **Dashboard Overview**
-
-![Dashboard](docs/screenshots/dashboard.png)
-
-Interactive dashboard with real-time metrics and AI insights
 
 ---
 
-### 📄 **Resume Upload & Analysis**
+## 🚀 API ENDPOINTS
 
-![Resume Upload](docs/screenshots/resume-upload.png)
-
-Drag-and-drop resume upload with instant AI-powered analysis
+| Category | Endpoint | Method | Purpose |
+|----------|----------|--------|---------|
+| 🔐 Auth | `/auth/login` | POST | Authenticate user |
+| 🔐 Auth | `/auth/register` | POST | Create account |
+| 📄 Resume | `/resumes/upload` | POST | Upload & parse resume |
+| 📄 Resume | `/resumes/analyze` | POST | AI analysis |
+| 💼 Jobs | `/jobs/search` | GET | Search job postings |
+| 💼 Jobs | `/jobs/create` | POST | Create job posting |
+| 🔍 Match | `/matching/candidates` | POST | Find matching candidates |
+| 🔍 Match | `/matching/jobs` | POST | Find matching jobs |
+| 📊 Dashboard | `/analytics/dashboard` | GET | Metrics & insights |
 
 ---
 
-### 🔍 **Job Matching Results**
+## 🧪 AI MATCHING ENGINE
 
-![Job Matching](docs/screenshots/job-matching.png)
+### Algorithm Weights
 
-Intelligent job matching with detailed compatibility scores
+| Factor | Weight | Method |
+|--------|--------|--------|
+| Technical Skills | 40% | Semantic + keyword matching |
+| Experience | 25% | Year analysis |
+| Education | 15% | Degree relevance |
+| Soft Skills | 10% | Context extraction |
+| Location | 5% | Geographic proximity |
+| Salary | 5% | Range compatibility |
+
+### Performance
+
+| Stage | Duration |
+|-------|----------|
+| PDF Parsing | 1.2s |
+| Text Extraction | 0.8s |
+| Gemini Analysis | 2.5s |
+| Matching Algorithm | 1.5s |
+| **Total** | **~7 seconds** |
 
 ---
 
-### 📊 **Analytics & Insights**
+## 🔒 SECURITY
 
-![Analytics](docs/screenshots/analytics.png)
+| Layer | Implementation | Standard |
+|-------|----------------|----------|
+| Authentication | JWT RS256 | OAuth 2.0 |
+| Encryption | AES-256 + TLS 1.3 | FIPS 140-2 |
+| Access Control | RBAC | NIST |
+| Audit | Comprehensive logging | SOC 2 II |
+| Compliance | GDPR/CCPA | ISO 27001 |
 
-Comprehensive analytics dashboard with actionable insights
+---
 
-## 🧪 **AI FEATURES & CAPABILITIES**
-
-![AI Brain](https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif)
-
-### 🧠 **Advanced AI Processing**
-
-```mermaid
-flowchart LR
-    A[📄 Document Upload] --> B[🔍 Text Extraction]
-    B --> C[🤖 Gemini AI Analysis]
-    C --> D{🎯 Content Type}
-    D -->|Resume| E[👤 Profile Extraction]
-    D -->|Job Posting| F[💼 Requirements Analysis]
-    E --> G[📊 Skills Matrix]
-    F --> G
-    G --> H[🎯 Intelligent Matching]
-    H --> I[📈 Match Score & Insights]
-    
-    style A fill:#FF6B6B,stroke:#333,stroke-width:2px
-    style C fill:#4ECDC4,stroke:#333,stroke-width:2px
-    style G fill:#45B7D1,stroke:#333,stroke-width:2px
-    style I fill:#96CEB4,stroke:#333,stroke-width:2px
-```
-
-### 🎯 **Matching Algorithm Breakdown**
-
-| **Factor** | **Weight** | **Algorithm** | **Impact** |
-|:-----------|:----------:|:-------------|:-----------|
-| 🛠️ **Technical Skills** | 40% | Semantic similarity + Keyword matching | High |
-| 💼 **Experience Level** | 25% | Years of experience analysis | High |
-| 🎓 **Education** | 15% | Degree relevance + Institution ranking | Medium |
-| 🌟 **Soft Skills** | 10% | Context-based extraction | Medium |
-| 📍 **Location** | 5% | Geographic proximity | Low |
-| 💰 **Salary Expectations** | 5% | Range compatibility | Low |
-
-### 🚀 **Performance Benchmarks**
+## 📊 PERFORMANCE METRICS
 
 ```mermaid
-gantt
-    title AI Processing Performance Timeline
-    dateFormat X
-    axisFormat %s
-    section Document Processing
-    PDF Parsing       :0, 1.2s
-    Text Extraction   :1.2s, 0.8s
-    section AI Analysis
-    Gemini API Call   :2s, 2.5s
-    Data Processing   :4.5s, 1s
-    section Matching
-    Algorithm Execution :5.5s, 1.5s
-    Results Generation  :7s, 0.5s
+pie title Technology Distribution
+    "Frontend (35%)" : 35
+    "Backend (30%)" : 30
+    "AI Service (20%)" : 20
+    "Infrastructure (10%)" : 10
+    "Docs (5%)" : 5
 ```
 
-## 💻 **DEVELOPMENT ECOSYSTEM**
+| Metric | Value | Target |
+|--------|-------|--------|
+| Load Time | <2s | ✅ |
+| API Response | <500ms | ✅ |
+| Match Accuracy | 87% | 95% 📈 |
+| Mobile Score | 95/100 | ✅ |
 
-### 🔧 **Development Tools & Scripts**
+---
 
-```bash
-# 🚀 Quick Development Commands
-npm run dev:all        # Start all services in development mode
-npm run build:all       # Build all services for production
-npm run test:all        # Run comprehensive test suite
-npm run lint:all        # Lint and format all code
-npm run docker:dev      # Start development environment
-npm run docker:prod     # Start production environment
-
-# 🧪 Testing Commands
-npm run test:unit       # Unit tests
-npm run test:integration # Integration tests
-npm run test:e2e        # End-to-end tests
-npm run test:ai         # AI service tests
-
-# 📊 Analysis Commands
-npm run analyze:bundle  # Bundle size analysis
-npm run analyze:deps    # Dependency analysis
-npm run analyze:security # Security vulnerability scan
-```
-
-### 🏗️ **Project Structure Deep Dive**
+## 🛠️ PROJECT STRUCTURE
 
 ```text
-🏢 ai-resume-job-matcher/
-├── 🎨 frontend/                    # Next.js Frontend
-│   ├── 📱 app/                     # App Router pages
-│   ├── 🧩 components/              # Reusable components
-│   │   ├── 🎯 ui/                  # Base UI components
-│   │   ├── 🔐 auth/                # Authentication components
-│   │   ├── 📄 resume/              # Resume-related components
-│   │   └── 💼 jobs/                # Job-related components
-│   ├── 🎣 hooks/                   # Custom React hooks
-│   ├── 🛠️ lib/                     # Utility libraries
-│   └── 📊 public/                  # Static assets
-├── 🔧 spring-boot-backend/         # Spring Boot API
-│   ├── 📦 src/main/java/           # Java source code
-│   │   ├── 🌐 controllers/         # REST controllers
-│   │   ├── 🏗️ services/            # Business logic
-│   │   ├── 🗄️ repositories/        # Data access layer
-│   │   ├── 📋 models/              # Entity models
-│   │   └── 🔒 security/            # Security configuration
-│   └── 📝 src/main/resources/      # Configuration files
-├── 🤖 fastapi-ai-service/          # AI Processing Service
-│   ├── 🧠 app/                     # FastAPI application
-│   │   ├── 🚀 main.py              # Application entry point
-│   │   ├── 🔗 routers/             # API routes
-│   │   ├── 🎯 services/            # AI service logic
-│   │   └── 📊 models/              # Data models
-│   └── 📋 requirements.txt         # Python dependencies
-├── 🏗️ infrastructure/              # Infrastructure as Code
-│   ├── 🐳 docker/                  # Docker configurations
-│   ├── ☁️ k8s/                     # Kubernetes manifests
-│   └── 🗄️ postgres-init/           # Database initialization
-└── 📚 docs/                        # Documentation
-    ├── 🏛️ architecture/            # Architecture diagrams
-    ├── 📖 api/                     # API documentation
-    └── 📸 screenshots/             # Application screenshots
+ai-resume-job-matcher/
+├── frontend/               # Next.js application
+├── spring-boot-backend/    # REST API
+├── fastapi-ai-service/     # AI processing
+├── infrastructure/         # Docker & K8s configs
+└── docs/                   # Documentation
 ```
 
-## 🎨 **UI/UX SHOWCASE**
+---
 
-### 🌈 **Design System Colors**
+## 🛠️ TROUBLESHOOTING
 
-```css
-/* 🎨 Primary Color Palette */
---primary-blue: #00D9FF;      /* Cyber Blue */
---primary-purple: #9C27B0;    /* AI Purple */
---primary-green: #00FF00;     /* Matrix Green */
---accent-orange: #FF6B35;     /* Energy Orange */
---neutral-dark: #1a1a1a;      /* Deep Space */
---neutral-light: #f8fafc;     /* Clean White */
-
-/* 🌟 Gradient Combinations */
---gradient-ai: linear-gradient(135deg, #00D9FF 0%, #9C27B0 100%);
---gradient-success: linear-gradient(135deg, #00FF00 0%, #00D9FF 100%);
---gradient-energy: linear-gradient(135deg, #FF6B35 0%, #9C27B0 100%);
-```
-
-### 📱 **Responsive Breakpoints**
-
-| Device | Breakpoint | Optimization |
-|:-------|:-----------|:-------------|
-| 📱 **Mobile** | 320px - 768px | Touch-first, vertical layout |
-| 📚 **Tablet** | 768px - 1024px | Adaptive grid, touch-optimized |
-| 💻 **Desktop** | 1024px - 1440px | Full feature set, hover states |
-| 🖥️ **Large Desktop** | 1440px+ | Enhanced spacing, wide layouts |
-
-## 🔒 **SECURITY & COMPLIANCE**
-
-```mermaid
-graph TB
-    subgraph "🛡️ Security Layers"
-        A[🌐 WAF/CDN Protection] --> B[🔐 API Gateway Security]
-        B --> C[🎫 JWT Authentication]
-        C --> D[👥 Role-Based Access Control]
-        D --> E[🗄️ Database Encryption]
-        E --> F[📝 Audit Logging]
-    end
-    
-    subgraph "🔍 Monitoring"
-        G[📊 Security Metrics] --> H[🚨 Threat Detection]
-        H --> I[📧 Alert Notifications]
-    end
-    
-    A --> G
-    F --> G
-    
-    style A fill:#FF6B6B,stroke:#333,stroke-width:2px
-    style C fill:#4ECDC4,stroke:#333,stroke-width:2px
-    style E fill:#45B7D1,stroke:#333,stroke-width:2px
-    style G fill:#96CEB4,stroke:#333,stroke-width:2px
-```
-
-### 🛡️ **Security Features**
-
-| **Layer** | **Implementation** | **Standard** |
-|:----------|:-------------------|:-------------|
-| 🔐 **Authentication** | JWT with RS256 | OAuth 2.0 / OpenID Connect |
-| 🔒 **Data Encryption** | AES-256 at rest, TLS 1.3 in transit | FIPS 140-2 |
-| 🎯 **Access Control** | RBAC with fine-grained permissions | NIST RBAC |
-| 📊 **Audit Logging** | Comprehensive activity tracking | SOC 2 Type II |
-| 🚨 **Vulnerability Management** | Automated scanning & patching | OWASP Top 10 |
-| 🛡️ **Privacy** | GDPR/CCPA compliant data handling | ISO 27001 |
-
-## 📊 **ANALYTICS & INSIGHTS**
-
-### 📈 **Business Intelligence Dashboard**
-
-```mermaid
-pie title User Engagement Distribution
-    "Resume Uploads" : 35
-    "Job Searches" : 28
-    "Application Submissions" : 20
-    "Profile Updates" : 12
-    "Analytics Views" : 5
-```
-
-```mermaid
-xychart-beta
-    title "Monthly Active Users Growth"
-    x-axis [Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep]
-    y-axis "Users" 0 --> 10000
-    bar [1200, 1800, 2500, 3200, 4100, 5300, 6800, 8100, 9500]
-```
-
-### 🎯 **Key Performance Indicators**
-
-| **Metric** | **Current** | **Target** | **Trend** |
-|:-----------|:-----------:|:----------:|:---------:|
-| 👥 **MAU (Monthly Active Users)** | 9,500 | 15,000 | 📈 +15% |
-| 🎯 **Match Accuracy** | 87% | 95% | 📈 +2% |
-| ⚡ **Avg Response Time** | 450ms | <300ms | 📈 -50ms |
-| 💼 **Job Fill Rate** | 65% | 80% | 📈 +5% |
-| ⭐ **User Satisfaction** | 4.6/5 | 4.8/5 | 📈 +0.1 |
-| 🔄 **User Retention (30d)** | 78% | 85% | 📈 +3% |
-
-## 🚀 **ROADMAP & FUTURE ENHANCEMENTS**
-
-```mermaid
-timeline
-    title Product Roadmap 2025-2026
-    
-    section Q1 2025
-        Mobile App         : Native iOS/Android apps
-        Video Interviews   : AI-powered video screening
-        Skills Assessment  : Automated coding challenges
-    
-    section Q2 2025
-        AI Chatbot         : 24/7 career assistance
-        Blockchain Certs   : Verified skill certificates
-        AR/VR Demos        : Virtual job previews
-    
-    section Q3 2025
-        Global Expansion   : Multi-language support
-        API Marketplace    : Third-party integrations
-        ML Recommendations: Advanced job suggestions
-    
-    section Q4 2025
-        Quantum Computing  : Next-gen matching algorithms
-        Metaverse Jobs     : Virtual workplace matching
-        AI Mentorship      : Personalized career guidance
-```
-
-### 🌟 **Upcoming Features**
-
-| **Feature** | **Status** | **Release** | **Impact** |
-|:------------|:-----------|:------------|:-----------|
-| 📱 **Mobile App** | 🚧 In Development | Q1 2025 | High |
-| 🎥 **Video Interviews** | 📋 Planning | Q1 2025 | High |
-| 🧪 **Skills Testing** | 💭 Concept | Q2 2025 | Medium |
-| 🤖 **AI Chatbot** | 💭 Concept | Q2 2025 | Medium |
-| 🌍 **Multi-language** | 📋 Planning | Q3 2025 | High |
-| 🔗 **Blockchain Certs** | 💭 Concept | Q3 2025 | Low |
-
-## 🏆 **AWARDS & RECOGNITION**
-
-| 🏅 **Award** | 🏢 **Organization** | 📅 **Year** |
-|:-------------|:-------------------|:------------|
-| 🥇 **Best AI Innovation** | TechCrunch Disrupt | 2024 |
-| 🥈 **Most Promising Startup** | Y Combinator | 2024 |
-| 🥉 **People's Choice Award** | ProductHunt | 2024 |
-| ⭐ **Top Developer Tool** | GitHub Stars | 2024 |
-
-## 🛠️ **TROUBLESHOOTING & SUPPORT**
-
-![Debugging](https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif)
-
-### 🚨 **Common Issues & Solutions**
-
-#### 🔧 Docker Issues
+### Docker Issues
 
 ```bash
-# Port already in use
-docker-compose down
-docker system prune -f
-docker-compose up -d
-
-# Database connection issues
-docker-compose logs postgres
-docker-compose restart postgres
-
-# Memory issues
-docker system prune -a
-# Increase Docker memory to 8GB+
+docker-compose down && docker system prune -f && docker-compose up -d
 ```
 
-#### 🤖 AI Service Issues
+### Database Connection
 
 ```bash
-# Gemini API quota exceeded
-# Check your API usage: https://makersuite.google.com/app/apikey
-# Upgrade your plan or wait for quota reset
-
-# Model timeout issues
-# Increase timeout in fastapi-ai-service/app/config.py
-GEMINI_TIMEOUT = 60  # seconds
-
-# Invalid API responses
-# Check API key format and permissions
-# Ensure your project has Gemini API enabled
+docker-compose logs postgres && docker-compose restart postgres
 ```
 
-#### ⚡ Performance Issues
+### API Timeout
 
 ```bash
-# Slow API responses
-# Enable Redis caching
-# Check database indexes
-# Monitor network latency
-
-# High memory usage
-# Implement pagination for large datasets
-# Optimize image sizes
-# Use lazy loading for components
+# Edit fastapi-ai-service/app/config.py
+GEMINI_TIMEOUT = 60
 ```
 
-### 📞 **Getting Help**
+---
 
-| **Channel** | **Response Time** | **Purpose** |
-|:------------|:------------------|:------------|
-| 🐛 **GitHub Issues** | 24-48 hours | Bug reports, feature requests |
-| 💬 **Discord Community** | Real-time | General questions, discussions |
-| 📧 **Email Support** | 12-24 hours | Technical support, partnerships |
-| 📚 **Documentation** | Instant | Self-service help, tutorials |
+## 🤝 CONTRIBUTING
 
-## 🤝 **CONTRIBUTING TO THE FUTURE**
+1. **Fork** the repository
+2. **Branch**: `git checkout -b feature/name`
+3. **Code** with tests: `npm run test:all`
+4. **Commit**: `git commit -m "✨ feature description"`
+5. **Push** & create Pull Request
 
-![Collaboration](https://media.giphy.com/media/LaVp0AyqR5bGsC5Cbm/giphy.gif)
+---
 
-### 🌟 **How to Contribute**
+## 📄 LICENSE
 
-```mermaid
-gitgraph:
-    options:
-        theme: base
-        mainBranchName: main
-    commit id: "Initial commit"
-    branch feature/awesome-feature
-    checkout feature/awesome-feature
-    commit id: "Add amazing feature"
-    commit id: "Add tests"
-    commit id: "Update documentation"
-    checkout main
-    merge feature/awesome-feature
-    commit id: "Feature merged!"
-```
+MIT License © 2025 AI Resume Job Matcher
 
-### 🎯 **Contribution Guidelines**
+**[GDPR](https://gdpr.eu/) • [SOC 2](https://www.aicpa.org) • [Privacy](docs/privacy-policy.md)**
 
-1. **🍴 Fork the Repository**
-   - Create your own copy of the project
+---
 
-1. **🌿 Create a Feature Branch**
+## 🙏 CREDITS
 
-    ```bash
-    git checkout -b feature/amazing-feature
-    ```
-
-1. **✨ Make Your Changes**
-   - Follow our coding standards
-   - Add comprehensive tests
-   - Update documentation
-
-1. **🧪 Test Everything**
-
-    ```bash
-    npm run test:all
-    npm run lint:all
-    ```
-
-1. **📝 Commit with Style**
-
-    ```bash
-    git commit -m "✨ Add amazing feature that does X
-   
-    - Implement feature X with Y technology
-    - Add comprehensive test coverage
-    - Update documentation and examples
-   
-    Fixes #123"
-    ```
-
-1. **🚀 Create Pull Request**
-   - Provide detailed description
-   - Include screenshots/demos
-   - Reference related issues
-
-### 🏆 **Contributor Recognition**
-
-| 👑 **Top Contributors** | 🎯 **Contributions** | 🌟 **Impact** |
-|:----------------------|:-------------------|:--------------|
-| [@jaynikam2005](https://github.com/jaynikam2005) | 🏗️ Core Architecture | 🔥 Founder |
-| [@contributor1](https://github.com) | 🎨 UI/UX Design | ⭐ High |
-| [@contributor2](https://github.com) | 🤖 AI Integration | ⭐ High |
-| [@contributor3](https://github.com) | 🔒 Security Features | ⭐ Medium |
-
-## 📄 **LICENSE & LEGAL**
-
-[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![GDPR Compliant](https://img.shields.io/badge/GDPR-Compliant-green.svg?style=for-the-badge)](https://gdpr.eu/)
-[![SOC 2](https://img.shields.io/badge/SOC%202-Compliant-blue.svg?style=for-the-badge)](https://www.aicpa.org/interestareas/frc/assuranceadvisoryservices/sorhome.html)
-
-
-### ⚖️ **Legal Information**
-
-```yaml
-License: MIT License
-Copyright: © 2024 AI Resume Job Matcher
-Privacy Policy: docs/privacy-policy.md
-Terms of Service: docs/terms-of-service.md
-Data Protection: GDPR & CCPA Compliant
-Security Standards: SOC 2 Type II
-```
-
-## 🌟 **ACKNOWLEDGEMENTS & CREDITS**
-
-### 🙏 **Special Thanks To**
-
-| **Technology** | **Provider** | **Usage** |
-|:---------------|:-------------|:----------|
-| 🤖 **AI Processing** | [Google Gemini AI](https://gemini.google.com) | Core AI capabilities |
-| ⚡ **Frontend Framework** | [Next.js](https://nextjs.org) | React-based web framework |
-| 🔧 **Backend Framework** | [Spring Boot](https://spring.io) | Java enterprise framework |
-| 🚀 **API Framework** | [FastAPI](https://fastapi.tiangolo.com) | Python async API framework |
-| 🎨 **UI Components** | [Tailwind CSS](https://tailwindcss.com) | Utility-first CSS framework |
-| 🗄️ **Database** | [PostgreSQL](https://postgresql.org) | Advanced relational database |
-| 🔍 **Search Engine** | [Elasticsearch](https://elastic.co) | Distributed search engine |
-| ⚡ **Caching** | [Redis](https://redis.io) | In-memory data structure store |
-| 🐳 **Containerization** | [Docker](https://docker.com) | Application containerization |
+| Technology | Provider |
+|-----------|----------|
+| 🤖 AI | [Google Gemini](https://gemini.google.com) |
+| ⚡ Frontend | [Next.js](https://nextjs.org) |
+| 🔧 Backend | [Spring Boot](https://spring.io) |
+| 🚀 API | [FastAPI](https://fastapi.tiangolo.com) |
+| 🎨 CSS | [Tailwind](https://tailwindcss.com) |
+| 🗄️ Database | [PostgreSQL](https://postgresql.org) |
+| 🔍 Search | [Elasticsearch](https://elastic.co) |
+| ⚡ Cache | [Redis](https://redis.io) |
+| 🐳 Containers | [Docker](https://docker.com) |
 
 ---
 
 ## 🚀 READY TO TRANSFORM RECRUITMENT?
 
-![Call to Action](https://readme-typing-svg.herokuapp.com?font=Orbitron&size=25&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Join+the+AI+Revolution;Build+the+Future+of+Work;Match+Dreams+with+Opportunities)
+[⭐ Star](https://github.com/jaynikam2005/ai-resume-job-matcher) • [🍴 Fork](https://github.com/jaynikam2005/ai-resume-job-matcher/fork) • [📖 Wiki](https://github.com/jaynikam2005/ai-resume-job-matcher/wiki)
 
-[🌟 Star this Repository](https://github.com/jaynikam2005/ai-resume-job-matcher) • [🍴 Fork & Contribute](https://github.com/jaynikam2005/ai-resume-job-matcher/fork) • [🚀 Deploy Your Own](https://github.com/jaynikam2005/ai-resume-job-matcher#quick-start-guide)
+### 💫 CONNECT
 
-### 💫 **Connect With Us**
-
-[![GitHub](https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jaynikam2005)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/yourhandle)
-[![Discord](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/yourcommunity)
+[![GitHub](https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github)](https://github.com/jaynikam2005)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/yourprofile)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter)](https://twitter.com/yourhandle)
+[![Discord](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord)](https://discord.gg/yourcommunity)
 
 ---
 
-![Made with Love](https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif)
+**Empowering careers, one match at a time** ✨
 
-Empowering careers, one match at a time ✨
