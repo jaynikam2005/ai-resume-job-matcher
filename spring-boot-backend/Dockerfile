@@ -5,8 +5,15 @@ WORKDIR /app
 # Install Gradle
 RUN apk add --no-cache gradle
 
-# Copy everything from current directory (Railway sets root to spring-boot-backend)
-COPY . .
+# Copy build configuration files first
+COPY build.gradle.kts settings.gradle.kts gradle.properties ./
+
+# Copy source code
+COPY src ./src
+
+# Debug: List files to see what was copied
+RUN echo "=== Files in /app ===" && ls -la && \
+    echo "=== Files in /app/src ===" && ls -la src/ || true
 
 # Build application
 RUN gradle bootJar --no-daemon -x test
