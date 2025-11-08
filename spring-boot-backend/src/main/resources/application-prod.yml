@@ -8,9 +8,9 @@ spring:
     name: ai-resume-matcher
   
   datasource:
-    url: ${DATABASE_URL}
-    username: ${DB_USERNAME}
-    password: ${DB_PASSWORD}
+    url: postgresql://postgres:tBxMMSCzCXgucLOiScvCIwLkZvydfulT@switchyard.proxy.rlwy.net:39768/railway
+    username: postgres
+    password: tBxMMSCzCXgucLOiScvCIwLkZvydfulT
     driver-class-name: org.postgresql.Driver
     hikari:
       maximum-pool-size: 5
