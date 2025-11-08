@@ -10,7 +10,7 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource
 @Configuration
 class CorsConfig {
 
-    @Value("\${frontend.url:http://localhost:3000}")
+    @Value("\${frontend.url:ai-resume-job-matcher-ex1l3skbw-jaynikam2005-3879s-projects.vercel.app}")
     private lateinit var frontendUrl: String
 
     @Bean
