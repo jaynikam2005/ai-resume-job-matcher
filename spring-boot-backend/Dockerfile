@@ -2,12 +2,12 @@
 FROM eclipse-temurin:21-jdk-alpine AS builder
 WORKDIR /app
 
-# Copy gradle wrapper and build files
-COPY gradle gradle
-COPY gradlew .
-COPY build.gradle.kts .
-COPY settings.gradle.kts .
-COPY gradle.properties .
+# Copy gradle wrapper and build files from spring-boot-backend
+COPY spring-boot-backend/gradle gradle
+COPY spring-boot-backend/gradlew .
+COPY spring-boot-backend/build.gradle.kts .
+COPY spring-boot-backend/settings.gradle.kts .
+COPY spring-boot-backend/gradle.properties .
 
 # Make gradlew executable
 RUN chmod +x gradlew
@@ -16,7 +16,7 @@ RUN chmod +x gradlew
 RUN ./gradlew dependencies --no-daemon || return 0
 
 # Copy source code
-COPY src src
+COPY spring-boot-backend/src src
 
 # Build application
 RUN ./gradlew bootJar --no-daemon -x test
