@@ -21,7 +21,7 @@ class CorsConfig {
         configuration.allowedOriginPatterns = listOf(
             frontendUrl,
             "https://*.vercel.app",
-            "https://ai-resume-job-matcher-*.vercel.app"
+            "http://ai-resume-job-matcher-ex1l3skbw-jaynikam2005-3879s-projects.vercel.app/"
         )
         
         configuration.allowedMethods = listOf("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH")
