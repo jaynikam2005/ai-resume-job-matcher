@@ -127,3 +127,17 @@ jobs:
       run: |
         echo "✅ Build successful! Ready for deployment."
         echo "Configure your deployment strategy here (AWS ECS, Kubernetes, etc.)"
+
+  sonarcloud:
+    name: SonarCloud Analysis
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # Shallow clones disabled for better analysis
+    
+    - name: SonarCloud Scan
+      uses: SonarSource/sonarcloud-github-action@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
