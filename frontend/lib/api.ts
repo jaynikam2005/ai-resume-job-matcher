@@ -14,11 +14,11 @@ const isServer = typeof window === 'undefined';
 // For client-side requests, use public URLs
 const API_BASE_URL = isServer && serverRuntimeConfig.internalApiUrl
   ? serverRuntimeConfig.internalApiUrl
-  : publicRuntimeConfig?.apiUrl || process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080/api';
+  : publicRuntimeConfig?.apiUrl || process.env.NEXT_PUBLIC_API_URL || 'https://ai-resume-job-matcher-production.up.railway.app/api';
 
 const AI_SERVICE_URL = isServer && serverRuntimeConfig.internalAiServiceUrl
   ? serverRuntimeConfig.internalAiServiceUrl
-  : publicRuntimeConfig?.aiServiceUrl || process.env.NEXT_PUBLIC_AI_SERVICE_URL || 'http://localhost:8001';
+  : publicRuntimeConfig?.aiServiceUrl || process.env.NEXT_PUBLIC_AI_SERVICE_URL || 'https://ai-resume-job-matcher-fsh7.onrender.com';
 
 // API endpoints
 export const API_ENDPOINTS = {
